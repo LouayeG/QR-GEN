@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QR Code Generator | Next.js Style</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@200;300;400;500;600;700;800;900;1000&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="light-mode">
+    <div class="theme-toggle">
+        <button id="themeToggleBtn">
+            <span class="toggle-icon">
+                <i class="fas fa-moon"></i>
+            </span>
+        </button>
+    </div>
+    <div class="container">
+        <h1>QR Code Generator</h1>
+        <div class="input-section">
+            <input 
+                type="text" 
+                id="qrInput" 
+                placeholder="https://example.com or any text..."
+                autocomplete="off"
+            >
+            <div class="size-selector">
+                <label for="qrSize">Size:</label>
+                <select id="qrSize">
+                    <option value="150x150">150x150</option>
+                    <option value="200x200" selected>200x200</option>
+                    <option value="300x300">300x300</option>
+                    <option value="400x400">400x400</option>
+                    <option value="500x500">500x500</option>
+                </select>
+            </div>
+            <div class="format-selector">
+                <label>Format:</label>
+                <div class="format-toggle">
+                    <button id="pngBtn" class="format-btn active" data-format="png">PNG</button>
+                    <button id="svgBtn" class="format-btn" data-format="svg">SVG</button>
+                </div>
+            </div>
+            <button id="generateBtn">Generate QR Code</button>
+        </div>
+        
+        <div class="qr-section" id="qrSection">
+            <div class="qr-placeholder">
+                <div class="placeholder-icon">
+                    <svg width="64" height="64" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M3 3H9V9H3V3Z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M15 3H21V9H15V3Z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M3 15H9V21H3V15Z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M15 15H21V21H15V15Z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M12 3V9" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M12 15V21" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M3 12H9" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M15 12H21" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                </div>
+                <p>Enter text or URL to generate your QR code</p>
+                <span class="placeholder-hint">Share links, contact info, or any text</span>
+            </div>
+            <img id="qrImage" alt="QR Code" style="display: none;">
+            <button id="downloadBtn" style="display: none;">Download QR Code</button>
+        </div>
+    </div>
+    
+    <footer class="footer">
+        <div class="social-links">
+            <a href="https://www.linkedin.com/in/louaye-gafaiti/" target="_blank" class="social-link" aria-label="LinkedIn Profile">
+                <i class="fab fa-linkedin-in"></i>
+            </a>
+        </div>
+        <div class="copyright">
+            <p>Code By <a href="https://github.com/LouayeG" target="_blank">LouayeG</a></p>
+        </div>
+    </footer>
+    
+    <script src="script.js"></script>
+</body>
+</html>
