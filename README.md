@@ -14,7 +14,7 @@ A modern, responsive QR code generator with a clean Next.js inspired design. Thi
 
 ## Demo
 
-You can try out the QR Code Generator here: [Live Demo](http://qrgen.louayegafaiti.studio/)
+You can try out the QR Code Generator here: [Live Demo](https://qrgen.louayegafaiti.studio/)
 
 ## Code Structure
 
