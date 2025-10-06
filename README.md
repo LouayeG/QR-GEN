@@ -2,8 +2,6 @@
 
 A modern, responsive QR code generator with a clean Next.js inspired design. This application allows users to easily create QR codes in both PNG and SVG formats.
 
-![QR Code Generator Screenshot](https://i.imgur.com/example.png)
-
 ## Features
 
 - 🎨 Clean, modern UI with Next.js design aesthetic
