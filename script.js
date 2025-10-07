@@ -9,10 +9,10 @@ const toggleIcon = document.querySelector('.toggle-icon');
 const pngBtn = document.getElementById('pngBtn');
 const svgBtn = document.getElementById('svgBtn');
 
-// Track selected format
+
 let selectedFormat = 'png';
 
-// Theme Toggle Logic
+
 function toggleTheme() {
     const body = document.body;
     const isDarkMode = body.classList.contains('dark-mode');

@@ -1,0 +1,12 @@
+{
+  "name": "qr-gen",
+  "version": "1.0.0",
+  "description": "QR Code Generator",
+  "main": "script.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "echo Hello World"
+  },
+  "author": "",
+  "license": "ISC"
+}
